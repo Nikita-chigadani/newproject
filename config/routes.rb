@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "sign_in", to: "sessions#new"
   post "sign_in", to: "sessions#create"
 
-  delete "logout", to: "session#destroy"
+  delete "logout", to: "sessions#destroy"
   get "about", to: "about#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
